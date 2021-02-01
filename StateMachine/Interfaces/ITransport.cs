@@ -1,6 +1,6 @@
 ﻿using StateMachine.States;
 
-namespace StateMachine
+namespace StateMachine.Interfaces
 {
     /// <summary>
     /// Public API
@@ -21,5 +21,6 @@ namespace StateMachine
         State PauseRecordState();
         State StopState();
         State RecordState();
+        string GetStateString();
     }
 }

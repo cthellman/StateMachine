@@ -1,4 +1,5 @@
 using System;
+using StateMachine.Interfaces;
 using Xunit;
 
 namespace StateMachine.Test

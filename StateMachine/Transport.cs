@@ -1,4 +1,5 @@
-﻿using StateMachine.States;
+﻿using StateMachine.Interfaces;
+using StateMachine.States;
 
 namespace StateMachine
 {
@@ -49,6 +50,11 @@ namespace StateMachine
         public State GetState()
         {
             return _state;
+        }
+
+        public string GetStateString()
+        {
+            return GetState().GetType().Name;
         }
 
         public void RequestPlay()

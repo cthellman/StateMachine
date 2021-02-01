@@ -1,0 +1,16 @@
+﻿@page "/transport"
+
+@using StateMachine.Interfaces
+@inject ITransport Tr
+
+<h1>Transport</h1>
+
+<p>State: @Tr.GetStateString()</p>
+
+<button class="btn btn-primary" @onclick="Tr.RequestRewind">Rewind</button>
+<button class="btn btn-primary" @onclick="Tr.RequestFastForward">Ff</button>
+<button class="btn btn-primary" @onclick="Tr.RequestPlay">Play</button>
+<button class="btn btn-primary" @onclick="Tr.RequestStop">Stop</button>
+<button class="btn btn-primary" @onclick="Tr.RequestRecord">Record</button>
+<button class="btn btn-primary" @onclick="Tr.RequestPause">Pause</button>
+
